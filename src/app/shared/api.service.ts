@@ -7,7 +7,7 @@ export class ApiService {
     http = inject(HttpClient)
 
     getEmployees() {
-        let url = `${this.host}/api/emplyoees`
+        let url = `${this.host}/api/employees`
         return this.http.get(url)
     }
 }
