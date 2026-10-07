@@ -15,4 +15,9 @@ export class EmployeeService {
         let url = `${this.host}/api/employees`
         return this.http.post(url, emp)
     }
+
+    deleteEmployee(id: number) {
+        let url = `${this.host}/api/employees/${id}`
+        return this.http.delete(url);
+    }
 }
